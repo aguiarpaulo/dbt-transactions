@@ -40,3 +40,7 @@ models:
     staging:
       +schema: public 
       +materialized: view
+
+    marts:
+      +schema: gold 
+      +materialized: view
