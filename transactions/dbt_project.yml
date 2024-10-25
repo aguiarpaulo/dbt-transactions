@@ -42,5 +42,6 @@ models:
       +materialized: view
 
     marts:
-      +schema: gold 
-      +materialized: view
+      +schema: finance 
+      +materialized: table
+

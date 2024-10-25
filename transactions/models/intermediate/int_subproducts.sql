@@ -11,4 +11,4 @@ FROM
     stg_subproducts
 )
 
-SELECT * FROM int_products
+SELECT * FROM int_subproducts
