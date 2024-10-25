@@ -32,7 +32,7 @@ clean-targets:         # directories to be removed by `dbt clean`
 seeds:
   transactions:
     +schema: public
-    +materialized: seed  # Alterado para 'seed'
+    +materialized: seed 
 
 models:
   transactions:
