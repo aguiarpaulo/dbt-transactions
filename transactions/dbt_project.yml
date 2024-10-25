@@ -38,10 +38,14 @@ models:
   transactions:
     # Config indicated by + and applies to all files under models/example/
     staging:
-      +schema: public 
+      schema: bronze 
+      +materialized: view
+
+    intermediate:
+      schema: silver 
       +materialized: view
 
     marts:
-      +schema: finance 
+      schema: gold 
       +materialized: table
 
