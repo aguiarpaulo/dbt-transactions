@@ -1,6 +1,6 @@
-    WITH stg_products AS (
-        SELECT * FROM {{ref('stg_products')}}
-    ),
+WITH stg_products AS (
+    SELECT * FROM {{ref('stg_products')}}
+),
 
 int_products AS (
 SELECT
