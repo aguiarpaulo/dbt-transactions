@@ -8,7 +8,11 @@
 
     {# staging models go in a global `staging` schema #}
     {% elif 'staging' in node.path %}
-        {{ 'staging' }}
+        {{ 'bronze' }}
+
+    {# staging models go in a global `intermediate` schema #}
+    {% elif 'intermediate' in node.path %}
+        {{ 'silver' }}
 
     {# marts models  go in a global `marts` schema #}
     {% elif 'marts' in node.path %}
