@@ -23,19 +23,19 @@ with DAG(
     # Task to run staging models
     run_dbt_staging = BashOperator(
         task_id='dbt_run_staging',
-        bash_command='cd C:/Users/user/Python/dbt-transactions/transactions && dbt run --select staging',
+        bash_command='cd /home/user/dbt-transactions/transactions && dbt run --select staging',
     )
 
     # Task to run intermediate models
     run_dbt_intermediate = BashOperator(
         task_id='dbt_run_intermediate',
-        bash_command='cd C:/Users/user/Python/dbt-transactions/transactions && dbt run --select intermediate',
+        bash_command='cd /home/user/dbt-transactions/transactions && dbt run --select intermediate',
     )
 
     # Task to run marts models
     run_dbt_marts = BashOperator(
         task_id='dbt_run_marts',
-        bash_command='cd C:/Users/user/Python/dbt-transactions/transactions && dbt run --select marts',
+        bash_command='cd /home/user/dbt-transactions/transactions && dbt run --select marts',
     )
 
     # Defining the order of task execution
