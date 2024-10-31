@@ -3,6 +3,7 @@ from airflow import DAG
 from airflow.operators.bash import BashOperator
 import os
 
+DBT_PROJRCT_DIR = '/usr/local/airflow/transactions'
 # Default settings for the DAG
 default_args = {
     'owner': 'paulo',
@@ -29,7 +30,7 @@ with DAG(
     # Task to run staging models
     run_dbt_staging = BashOperator(
         task_id='dbt_run_staging',
-        bash_command='cd /usr/local/airflow/transactions && dbt run --select staging || echo "Error in path"',
+        bash_command=f'dbt run --select staging --profiles-dir {DBT_PROJRCT_DIR} --project-dir {DBT_PROJRCT_DIR}',
     )
 
     # Task to run intermediate models

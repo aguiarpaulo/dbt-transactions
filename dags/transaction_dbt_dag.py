@@ -30,7 +30,7 @@ def dbt_pipeline():
         # Altera para o diretório do DBT
         os.chdir(dbt_dir)
         # Executa o comando DBT com o subprocess
-        command = f"dbt run --select {select_layer}"
+        command = f"cd /usr/local/airflow/transactions && dbt run --select {select_layer}"
         result = subprocess.run(command, shell=True, capture_output=True, text=True)
         if result.returncode != 0:
             raise Exception(f"Erro ao executar {command}: {result.stderr}")
