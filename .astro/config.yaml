@@ -3,4 +3,4 @@ project:
   name: dbt-transactions
 
   volumes:
-    - C:/Users/user/Python/dbt-transactions/transactions:/usr/local/airflow/transactions
+    - C:/Users/user/Python/dbt-transactions/transactions/:/usr/local/airflow/transactions/
