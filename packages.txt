@@ -1,0 +1,2 @@
+gcc
+phyton3-dev

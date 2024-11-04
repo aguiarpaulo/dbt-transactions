@@ -3,7 +3,7 @@ from airflow import DAG
 from airflow.operators.bash import BashOperator
 import os
 
-DBT_PROJRCT_DIR = '/usr/local/airflow/transactions'
+DBT_PROJRCT_DIR = '/usr/local/airflow/dbt'
 # Default settings for the DAG
 default_args = {
     'owner': 'paulo',
@@ -36,13 +36,13 @@ with DAG(
     # Task to run intermediate models
     run_dbt_intermediate = BashOperator(
         task_id='dbt_run_intermediate',
-        bash_command='cd /usr/local/airflow/transactions && dbt run --select intermediate || echo "Error in path',
+        bash_command='cd /usr/local/airflow/dbt && dbt run --select intermediate || echo "Error in path',
     )
 
     # Task to run marts models
     run_dbt_marts = BashOperator(
         task_id='dbt_run_marts',
-        bash_command='cd /usr/local/airflow/transactions && dbt run --select marts || echo "Error in path',
+        bash_command='cd /usr/local/airflow/dbt && dbt run --select marts || echo "Error in path',
     )
 
     # Defining the order of task execution
