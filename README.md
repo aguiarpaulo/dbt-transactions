@@ -2,10 +2,14 @@
 dbt architecture to create transactions dashboard.
 # dbt-transactions
 
-[![Architecture](./assets/architecture.png)]
+This is the architecture to create the product dashboard:
 
-[![Products Dashboard](./assets/dash.png)]
-link -> https://shorturl.at/yltUt
+![Architecture](./assets/architecture.png)
+
+![Products Dashboard](./assets/dash.png)
+# link -> https://shorturl.at/yltUt
+
+
 1. Clone the repository:
 ```bash
 git clone https://github.com/aguiarpaulo/dbt-transactions.git
