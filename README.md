@@ -4,9 +4,9 @@ dbt architecture to create transactions dashboard.
 
 This is the architecture to create the product dashboard:
 
-![Architecture](./assets/architecture.png)
+![Architecture](./assets/architecture.PNG)
 
-![Products Dashboard](./assets/dash.png)
+![Products Dashboard](./assets/dash.PNG)
 # link -> https://shorturl.at/yltUt
 
 
