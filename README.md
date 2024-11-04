@@ -2,9 +2,9 @@
 dbt architecture to create transactions dashboard.
 # dbt-transactions
 
-![Architecture](assets/architecture.png)
+[![Architecture](./assets/architecture.png)]
 
-![Products Dashboard](assets/dash.png)
+[![Products Dashboard](./assets/dash.png)]
 
 1. Clone the repository:
 ```bash
