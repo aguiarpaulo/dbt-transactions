@@ -5,7 +5,7 @@ dbt architecture to create transactions dashboard.
 [![Architecture](./assets/architecture.png)]
 
 [![Products Dashboard](./assets/dash.png)]
-
+link -> https://shorturl.at/yltUt
 1. Clone the repository:
 ```bash
 git clone https://github.com/aguiarpaulo/dbt-transactions.git
@@ -41,5 +41,3 @@ dbt -> dbt run
 ```
 Contact:
 Paulo Aguiar - aguiarlapaulo@gmail.com
-
-dash - https://shorturl.at/yltUt
