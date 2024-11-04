@@ -1,18 +1,43 @@
-Welcome to your new dbt project!
+# dbt-transactions
 
-### Using the starter project
+![Architecture](assets/architecture.png)
 
-Try running the following commands:
-- dbt run
-- dbt test
+![Products Dashboard](assets/dash.png)
 
+1. Clone the repository:
+```bash
+git clone https://github.com/aguiarpaulo/dbt-transactions.git
 
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [chat](https://community.getdbt.com/) on Slack for live discussions and support
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
-
+cd dbt-transactions
+```
+2. Configure the correct Python version with pyenv:
+```bash
+pyenv install 3.11.3
+pyenv local 3.11.3
+```
+3. Activate the virtual environment:
+```bash
+python -m venv .venv
+source .venv/Scripts/activate
+```
+4. Install project dependencies:
+```bash
+pip install -r requirements.txt 
+```
+5. Run tests to ensure everything is working as expected:
+```bash
+poetry run pytest -v
+```
+6. Run the command to view project documentation:
+```bash
+mkdocs serve
+```
+7. Run the pipeline run command to perform ETL:
+```bash
+airflow -> astro dev (start or restart)
+dbt -> dbt run
+```
+Contact:
+Paulo Aguiar - aguiarlapaulo@gmail.com
 
 dash - https://shorturl.at/yltUt
