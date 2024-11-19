@@ -8,6 +8,7 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.11"
 pyproject-toml = "^0.0.10"
+astronomer-cosmos = "^1.7.1"
 
 
 [build-system]

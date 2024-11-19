@@ -26,7 +26,6 @@ services:
       PGADMIN_LISTEN_PORT: 5050
       PGADMIN_CONFIG_SERVER_MODE: 'False'
     volumes:
-      - postgresql_bin:/usr/lib/postgresql
       - pgadmin_root_prefs:/root/.pgadmin
       - pgadmin_working_dir:/var/lib/pgadmin
       - ./files:/files
@@ -48,15 +47,3 @@ volumes:
     driver: local
   postgresql_bin:
     driver: local
-
-  scheduler:
-    volumes:
-      - ./dbt:/usr/local/airflow/dbt
-
-  webserver:
-    volumes:
-    - ./dbt:/usr/local/airflow/dbt
-
-  triggerer:
-    volumes:
-    - ./dbt:/usr/local/airflow/dbt
