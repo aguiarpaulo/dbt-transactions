@@ -13,7 +13,7 @@ services:
       - ./transactions.sql:/docker-entrypoint-initdb.d/transactions.sql
       - ./files:/files
     ports:
-      - 55432:5432
+      - 5433:5433
     networks:
       - db
 
