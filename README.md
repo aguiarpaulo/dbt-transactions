@@ -30,15 +30,7 @@ source .venv/Scripts/activate
 ```bash
 pip install -r requirements.txt 
 ```
-5. Run tests to ensure everything is working as expected:
-```bash
-poetry run pytest -v
-```
-6. Run the command to view project documentation:
-```bash
-mkdocs serve
-```
-7. Run the pipeline run command to perform ETL:
+5. Run the pipeline run command to perform ETL:
 ```bash
 airflow -> astro dev (start or restart)
 dbt -> dbt run
