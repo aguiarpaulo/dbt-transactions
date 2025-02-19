@@ -36,4 +36,4 @@ airflow -> astro dev (start or restart)
 dbt -> dbt run
 ```
 Contact:
-Paulo Aguiar - aguiarlapaulo@gmail.com
+Paulo Aguiar- aguiarlapaulo@gmail.com
